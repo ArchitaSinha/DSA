@@ -1,0 +1,29 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+bool search(int arr[], int n, int key){
+    for(int i = 0; i<n; i++){
+        if(key == arr[i]){
+            return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    int arr[1000];
+    int  num;
+    printf("Enter number of elements \n");
+    cin >> num;
+    for(int i=0; i<num ; i++){
+        cin >> arr[i];
+    }
+    int key;
+    printf("Enter number to be found : ");
+    cin >> key;
+    cout << search(arr,num,key);
+   
+
+    return 0;
+}
